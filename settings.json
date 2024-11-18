@@ -1,0 +1,211 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "catppuccin.italicKeywords": false,
+    "catppuccin.boldKeywords": true,
+    "editor.fontFamily": "JetBrainsMono Nerd Font Medium",
+    "editor.fontLigatures": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 4,
+    "editor.stickyScroll.enabled": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "workbench.productIconTheme": "fluent-icons",
+    // "workbench.statusBar.visible": false,
+    // "breadcrumbs.enabled": false,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "zenMode.hideLineNumbers": false,
+    "files.autoSave": "onWindowChange",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always",
+        "source.addMissingImports": "always"
+    },
+
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+
+    "codeium.enableConfig": {
+        "*": true
+    },
+
+    "security.workspace.trust.untrustedFiles": "open",
+    "remote.autoForwardPortsSource": "hybrid",
+
+    "prettier.tabWidth": 4,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFoldingRangeProvider": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "vim.useSystemClipboard": true,
+    "vim.foldfix": true,
+    "vim.leader": " ",
+    "vim.normalModeKeyBindings": [
+        {
+            // Close the current buffer
+            "before": ["<leader>", "q"],
+            "commands": [":q!"]
+        },
+        {
+            // Split the editor horizontally
+            "before": ["<leader>", "s"],
+            "commands": [":split"]
+        },
+        {
+            // Split the editor vertically
+            "before": ["<leader>", "v"],
+            "commands": [":vsplit"]
+        },
+        {
+            // Save and format document
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            // Delete the current buffer
+            "before": ["<leader>", "d"],
+            "commands": [":bd"]
+        },
+        {
+            // Delete all buffer in split
+            "before": ["<leader>", "<S-d>"],
+            "commands": ["workbench.action.closeEditorsInGroup"]
+        }
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // Move to previous tab
+            "before": ["<S-h>"],
+            "commands": [":tabprevious"]
+        },
+        {
+            // Move to next tab
+            "before": ["<S-l>"],
+            "commands": [":tabnext"]
+        },
+        {
+            // Focus left editor group
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            // Focus right editor group
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            // Focus below editor group
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            // Focus above editor group
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            // Format the document
+            "before": ["g", "f"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
+            // Format the document
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            // Format the document
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        {
+            // Go to the previous diagnostic error
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            // Go to the next diagnostic error
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            // Quick fix action
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            // Quick fix action
+            "before": ["<leader>", "r"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": ["workbench.action.showAllEditors"]
+        },
+        {
+            "before": ["<leader>", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // Show definition hover
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["editor.action.addSelectionToNextFindMatch"]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        // Move selected lines while staying in visual mode
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+    ],
+
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            // Format document in visual mode
+            "before": ["g", "f"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
+            "before": ["space", "n"],
+            "commands": ["editor.action.addSelectionToNextFindMatch"]
+        }
+    ],
+
+    "vscode_custom_css.imports": [
+        "file:///C:/Users/qwert/Desktop/style.css",
+        "file:///C:/Users/qwert/Desktop/script.js"
+    ],
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "window.menuBarVisibility": "compact",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "workbench.activityBar.location": "hidden"
+}
