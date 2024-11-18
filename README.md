@@ -1,7 +1,7 @@
-# 🛠️ My VSCode Development Environment
+# 🛠️ My VSCode Setup for Web Development
 
 ## 📄 Description
-Highly customized VSCode configuration optimized for web development with Vim-inspired workflow.
+Highly customized VSCode config optimized for web development with Vim-inspired workflow.
 
 ## 📂 Repository Contents
 - `settings.json`: VSCode user settings
@@ -31,17 +31,20 @@ Highly customized VSCode configuration optimized for web development with Vim-in
    - [JetBrains Icon Theme](https://marketplace.visualstudio.com/items?itemName=chadalen.vscode-jetbrains-icon-theme)
    - [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-iconsS )
 
-4. Adjust custom CSS paths:
+4. Adjust custom CSS and JavaScript paths:
    ```json
    "vscode_custom_css.imports": [
      // Windows path
-     "file:///C:/Users/YourUsername/Desktop/style.css",
-     
+     "file:///C:/Users/YourUsername/your-path/style.css",
+     "file:///C:/Users/YourUsername/your-path/script.js",
+
      // macOS path
-     "file:///Users/YourUsername/Desktop/style.css",
+     "file:///Users/YourUsername/your-path/style.css",
+     "file:///Users/YourUsername/your-path/script.js",
      
      // Linux path
-     "file:///home/YourUsername/Desktop/style.css"
+     "file:///home/YourUsername/your-path/style.css"
+     "file:///home/YourUsername/your-path/script.js",
    ]
    ```
 
